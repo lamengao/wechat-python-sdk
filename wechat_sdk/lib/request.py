@@ -43,6 +43,7 @@ class WechatRequest(object):
         r = requests.request(
             method=method,
             url=url,
+            verify=False,
             **kwargs
         )
         r.raise_for_status()
